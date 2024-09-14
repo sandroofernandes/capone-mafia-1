@@ -6,7 +6,7 @@
 /storage/*.key
 /vendor
 /certificate
-/__material
+/__materials
 .env
 .env.backup
 .env.production
