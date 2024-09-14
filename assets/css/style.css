@@ -60,10 +60,10 @@ body {
 	justify-content: center;
 	align-items: end;
 	padding-bottom: 100px;
-	box-shadow: inset 0 -650px 700px 30px rgba(20, 20, 20, 0.7);
+	box-shadow: inset 0 -250px 500px 30px rgba(20, 20, 20, 0.7);
 }
 .person.redirect {
-	min-height: 60vh;
+	min-height: 70vh;
 	box-shadow: inset 0 -250px 500px 30px rgba(20, 20, 20, 0.7);
 }
 .text-presentation {
@@ -199,7 +199,8 @@ footer .copyright {
 		font-size: 1.3rem;
 	}
 	.person {
-		min-height: 105vh;
+		min-height: 90vh;
+		box-shadow: inset 0 -600px 300px 30px rgba(20, 20, 20, 0.7);
 	}
 	.person.redirect {
 		min-height: 105vh;
@@ -220,5 +221,14 @@ footer .copyright {
 	.menu_footer li {
 		display: inline-block;
 		margin: 0 7px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.person {
+		min-height: 104vh;
+	}
+	.person.redirect {
+		min-height: 135vh;
 	}
 }

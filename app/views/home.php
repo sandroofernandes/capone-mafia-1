@@ -49,7 +49,7 @@
             <input class="form-control form-control-lg" type="text" name="phone" id="phone" placeholder="DDD + Celular" required>
           </div>
           <div class="col-12">
-            <div class="d-grid gap-2 py-3">
+            <div class="d-grid gap-2">
               <button class="btn btn-warning btn-lg btn-submit animation-pulse-scale-green-light py-3" type="submit">
                 Receber Manipulação <img class="btn-icon ms-2" src="assets/img/money-wings.png">
               </button>
