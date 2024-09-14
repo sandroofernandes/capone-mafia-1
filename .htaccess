@@ -1,0 +1,28 @@
+# PÁGINA PADRÃO
+DirectoryIndex index.php
+
+# LIGA O REWRITE DE URL
+RewriteEngine on
+
+# FORÇA O CARREGAMENTO COM HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# REGRA DE REWRITE PARA ARQUIVOS E PASTAS
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# REDIRECIONA TODAS AS URLs PARA O index.php
+RewriteRule ^(.*)$ ./index.php [QSA,NC]
+
+# NEGA O ACESSO A TODAS AS PASTAS
+Options -Indexes
+
+# NA PERMISSÃO NEGADA - ERROR 403 - MOSTRA UMA PÁGINA PERSONALIZADA
+ErrorDocument 403 /403
+
+# INPEDE QUE OS ARQUIVOS ABAIXO SEJAM CHAMADOS DIRETAMENTE NA URL
+<FilesMatch "config\.php|\.env|composer\.json|composer\.lock">
+order allow,deny
+deny from all
+</FilesMatch>

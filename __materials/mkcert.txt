@@ -1,0 +1,9 @@
+* Se a pasta certificate não existir dentro da pasta raiz deste sistema crie
+* Abra o CMD dentro da pasta certificate
+* Execute mo comando abaixo
+
+  mkcert mafia-capone-1.local www.mafia-capone-1.local
+
+* Serão gerados 2 arquivos
+* Altere o aqrquivo httpd-vhosts.conf com os nomes dos arquivos gerados
+* Renicie o Wampserver

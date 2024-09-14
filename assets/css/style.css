@@ -1,0 +1,224 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--black);
+	background-color: var(--black);
+}
+.header_nav {
+	background-color: var(--bg-topbar);
+}
+
+/* COUNTDOWN */
+.countdown.top {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.countdown.top p {
+	font-size: 0.8rem;
+	margin-right: 5px;
+	margin-bottom: 0;
+}
+.countdown.top .time {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #555;
+	border-radius: 4px;
+	margin: 0 2px;
+}
+.countdown.top .time h2 {
+	font-size: 1.2rem;
+	font-weight: 900;
+	margin-bottom: 0;
+}
+.countdown.top .time small {
+	display: none;
+	font-weight: 300;
+}
+.countdown.top .time #days {
+	display: none;
+}
+/* COUNTDOWN END */
+
+.person {
+	min-height: 90vh;
+	position: relative;
+	background-image: url("../img/person.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top center;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	padding-bottom: 100px;
+	box-shadow: inset 0 -650px 700px 30px rgba(20, 20, 20, 0.7);
+}
+.person.redirect {
+	min-height: 60vh;
+	box-shadow: inset 0 -250px 500px 30px rgba(20, 20, 20, 0.7);
+}
+.text-presentation {
+	margin-bottom: 40px;
+}
+.text-presentation .preloader {
+	width: 100px;
+}
+.text-presentation .timer_view {
+	color: #ccfd52;
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+.text-presentation h3 {
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: var(--white);
+	letter-spacing: 1px;
+}
+.text-presentation h4 {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	font-weight: 300;
+	color: var(--white);
+	letter-spacing: 1px;
+}
+.text-presentation h1 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 3.5rem;
+	line-height: 1;
+	font-weight: 900;
+	color: var(--yellow);
+}
+.text-presentation h6 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 0.1rem;
+	color: var(--bg-topbar);
+	text-transform: uppercase;
+}
+.text-presentation b {
+	font-weight: 700;
+}
+.person form .btn-submit {
+	color: #222;
+	font-size: 1.1rem;
+	font-weight: 700;
+	transition: background-color 0.2s ease-in-out;
+	text-transform: uppercase;
+}
+.person form .btn-submit:hover {
+	background-color: var(--bg-topbar) !important;
+}
+.person form .btn-icon {
+	display: inline-block;
+}
+.notice img {
+	margin-bottom: 20px;
+}
+.notice p {
+	color: #eee;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+.notice p span {
+	color: #ccfd52;
+}
+.notice p b {
+	font-weight: 800;
+}
+
+.content_text {
+	color: #ddd;
+	font-size: 0.8rem;
+	font-weight: 300;
+	text-align: justify;
+}
+.content_text a {
+	color: var(--yellow);
+}
+
+/* PAGES */
+.page_403 h1,
+.page_404 h1 {
+	font-size: 6rem;
+	font-weight: bold;
+}
+.page_403 h3,
+.page_404 h3 {
+	font-size: 1.7rem;
+}
+.page_privacy_policy h3,
+.page_privacy_cookie h3,
+.page_terms_conditions h3 {
+	margin-top: 30px;
+	font-weight: 700;
+}
+/* PAGES END */
+/* FOOTER */
+.menu_footer {
+	list-style: none;
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid #08c18a;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0;
+}
+.menu_footer li {
+	display: block;
+	margin: 10px 0;
+}
+.menu_footer li a {
+	color: #08c18a;
+	text-decoration: none;
+	font-weight: 300;
+}
+.menu_footer li a:hover {
+	color: var(--bg-topbar);
+}
+footer .copyright {
+	color: #ddd;
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+/* FOOTER END */
+
+@media screen and (min-width: 500px) {
+	.countdown.top p {
+		font-size: 1.3rem;
+	}
+	.person {
+		min-height: 105vh;
+	}
+	.person.redirect {
+		min-height: 105vh;
+		align-items: center;
+	}
+	.text-presentation h3 {
+		font-size: 2rem;
+	}
+	.text-presentation h1 {
+		font-size: 4.5rem;
+	}
+	.text-presentation h6 {
+		font-size: 1.5rem;
+	}
+	.person form .btn-submit {
+		font-size: 1.3rem;
+	}
+	.menu_footer li {
+		display: inline-block;
+		margin: 0 7px;
+	}
+}

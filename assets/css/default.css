@@ -1,0 +1,204 @@
+:root {
+	--white: #fff;
+	--black: #141414;
+	--yellow: #f5bf00;
+	--bg-topbar: #cdfd52;
+	--colorBtn: #0d6efd;
+	--blue: #4285f4;
+	--blue2: #0d6efd;
+	--green: #6ec531;
+	--greenHover: #b8c531;
+	--orange: #ff9900;
+	--orangeHover: #f77f00;
+}
+
+input,
+textarea {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+button {
+	outline: none !important;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+body::-webkit-scrollbar {
+	width: 12px;
+}
+body::-webkit-scrollbar-track {
+	background: var(--black);
+}
+body::-webkit-scrollbar-thumb {
+	background: #5e5d5d;
+	border: 4px solid var(--black);
+	border-radius: 8px;
+	transition: background 0.2s linear;
+}
+body::-webkit-scrollbar-thumb:hover {
+	background: #888;
+	border-width: 3px;
+}
+
+.btn-yellow {
+	background-color: var(--yellow) !important;
+	color: var(--black) !important;
+}
+.btn-black {
+	background-color: var(--black) !important;
+	color: var(--yellow) !important;
+	font-weight: 600;
+}
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+	background-color: var(--yellow) !important;
+	border-color: var(--yellow) !important;
+	color: var(--black) !important;
+}
+.btn-black small {
+	font-weight: 400;
+	font-size: 80%;
+}
+.btn-outline-black {
+	background-color: var(--yellow);
+	border-color: var(--black) !important;
+	color: var(--black) !important;
+}
+.btn-outline-black:hover {
+	background-color: var(--black) !important;
+	color: var(--yellow) !important;
+}
+
+.fw-200 {
+	font-weight: 200 !important;
+}
+.fw-300 {
+	font-weight: 300 !important;
+}
+.fw-400 {
+	font-weight: 400 !important;
+}
+.fw-500 {
+	font-weight: 500 !important;
+}
+.fw-600 {
+	font-weight: 600 !important;
+}
+.fw-700 {
+	font-weight: 700 !important;
+}
+.fw-800 {
+	font-weight: 800 !important;
+}
+.fw-900 {
+	font-weight: 900 !important;
+}
+
+.fs-7 {
+	font-size: 0.75rem !important;
+}
+.fs-8 {
+	font-size: 0.5rem !important;
+}
+
+/* Animate */
+.animation-pulse {
+	-webkit-animation: pulse 1s infinite;
+	animation: pulse 2s infinite;
+}
+.animation-pulse:hover {
+	animation: step-end !important;
+}
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 var(--colorBtn);
+	}
+	60% {
+		box-shadow: 0 0 0 20px transparent;
+	}
+	100% {
+		box-shadow: 0 0 0 0 transparent;
+	}
+}
+
+.animation-pulse-scale {
+	-webkit-animation: pulse-scale 1s infinite;
+	animation: pulse-scale 2s infinite;
+}
+.animation-pulse-scale:hover {
+	transform: scale(1);
+	animation: step-end !important;
+}
+@keyframes pulse-scale {
+	0% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 var(--colorBtn);
+	}
+	60% {
+		transform: scale(1.05);
+		box-shadow: 0 0 0 20px transparent;
+	}
+	100% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 transparent;
+	}
+}
+
+.animation-pulse-scale-green {
+	-webkit-animation: pulse-scale-green 1s infinite;
+	animation: pulse-scale-green 2s infinite;
+}
+.animation-pulse-scale-green:hover {
+	transform: scale(1);
+	animation: step-end !important;
+}
+@keyframes pulse-scale-green {
+	0% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 var(--yellow);
+	}
+	60% {
+		transform: scale(1.05);
+		box-shadow: 0 0 0 20px transparent;
+	}
+	100% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 transparent;
+	}
+}
+
+button.animation-pulse-scale-green-light,
+.animation-pulse-scale-green-light {
+	-webkit-animation: pulse-scale-green-light 2s infinite;
+	animation: pulse-scale-green-light 2s infinite;
+	transition: transform 0.2s ease-in-out;
+}
+.animation-pulse-scale-green-light:hover {
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
+}
+@keyframes pulse-scale-green-light {
+	0% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 var(--yellow);
+	}
+	60% {
+		transform: scale(1.05);
+		box-shadow: 0 0 0 20px transparent;
+	}
+	100% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 transparent;
+	}
+}
