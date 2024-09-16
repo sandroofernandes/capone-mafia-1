@@ -41,7 +41,7 @@
           </div>
         </div>
 
-        <form class="row" action="<?= SITE_URL; ?>/page-redirect" method="post">
+        <form class="row" id="form-lead" action="<?= SITE_URL; ?>/page-redirect" method="post">
           <div class="col-12 mb-3">
             <input class="form-control form-control-lg" type="text" name="name" id="name" placeholder="Seu nome" required>
           </div>
@@ -50,7 +50,7 @@
           </div>
           <div class="col-12">
             <div class="d-grid gap-2">
-              <button class="btn btn-warning btn-lg btn-submit animation-pulse-scale-green-light py-3" type="submit">
+              <button class="btn btn-warning btn-lg btn-submit animation-pulse-scale-green-light py-3" id="btnPurchase" type="submit">
                 Receber Manipulação <img class="btn-icon ms-2" src="assets/img/money-wings.png">
               </button>
             </div>

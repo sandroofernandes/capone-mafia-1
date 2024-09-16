@@ -1,3 +1,11 @@
+if ("#btnPurchase") {
+	let formLead = document.getElementById("form-lead");
+	document.getElementById("btnPurchase").addEventListener("click", function () {
+		fbq("track", "Lead");
+		formLead.submit();
+	});
+}
+
 /*
  * Countdown
  */
