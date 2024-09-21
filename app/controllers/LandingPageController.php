@@ -25,7 +25,7 @@ class LandingPageController
     }
 
     View::render('page_redirect', [
-      'title' => $_SESSION['clientName'] . ' aguarde você será direcionado!' . TITLE_SEPARATOR . SITE_NAME,
+      'title' => $_SESSION['client_name'] . ' aguarde você será direcionado!' . TITLE_SEPARATOR . SITE_NAME,
       'pageGroup' => 'landing_page page_redirect',
       'thisPage' => 'page_redirect',
       'favicon' => SITE_ICON
@@ -51,9 +51,10 @@ class LandingPageController
 
     $textZapEncode = urlencode(str_replace('\n', '%0A', $textZap));
 
-    $link = 'https://wa.me/' . $phoneZap . '?text=' . $textZapEncode;
+    // $link = 'https://wa.me/' . $phoneZap . '?text=' . $textZapEncode;
+    $link = 'https://t.me/mafiacapone_bot?start=w29967314';
 
-    $_SESSION['clientName'] = $name;
+    $_SESSION['client_name'] = $name;
     $_SESSION['url_redirect'] = $link;
 
     // return Redirect::to($link);
