@@ -42,8 +42,8 @@ class LandingPageController
     }
 
     $phoneClient = Utils::cleanString($phone);
-    // $phoneZap = "5522992216934";
-    $phoneZap = "554499560659";
+    $phoneZap = "5522992216934";
+    // $phoneZap = "554499560659";
 
     // https://wa.me/554499560659?text=Manda%20a%20ODD%203%20da%20Mafia%20Polonesa!
     // $textZap = "Oi meu nome é " . $name . ", meu número de contato é " . $phoneClient  . ".\nManda pra mim a ODD da máfia Polonesa.";
