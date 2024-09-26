@@ -6,6 +6,8 @@ try {
   $router->add('/page-redirect', 'POST', 'LandingPageController:pageRedirectPost');
   $router->add('/ld-3', 'GET', 'LandingPageController:landing_page_03');
 
+  $router->add('/acesso-privado', 'GET', 'ThanksPageController:thanks_01');
+
   $router->add('/politica-privacidade', 'GET', 'PageController:privacyPolicy');
   $router->add('/politica-cookie', 'GET', 'PageController:privacyCookie');
   $router->add('/termos-uso', 'GET', 'PageController:termosUso');

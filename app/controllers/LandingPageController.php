@@ -42,8 +42,9 @@ class LandingPageController
     }
 
     $phoneClient = Utils::cleanString($phone);
-    $phoneZap = "5522992216934";
-    // $phoneZap = "554499560659";
+
+    // $phoneZap = "5522992216934";
+    $phoneZap = "554499560659";
 
     // https://wa.me/554499560659?text=Manda%20a%20ODD%203%20da%20Mafia%20Polonesa!
     // $textZap = "Oi meu nome é " . $name . ", meu número de contato é " . $phoneClient  . ".\nManda pra mim a ODD da máfia Polonesa.";
@@ -53,8 +54,10 @@ class LandingPageController
 
     // $link = 'https://wa.me/' . $phoneZap . '?text=' . $textZapEncode;
     $link = 'https://t.me/mafiacapone_bot?start=w29967314';
+    // $link = 'https://ig.me/m/caponebet_br?ref=w30181358';
 
     $_SESSION['client_name'] = $name;
+    $_SESSION['client_phone'] = $phone;
     $_SESSION['url_redirect'] = $link;
 
     // return Redirect::to($link);

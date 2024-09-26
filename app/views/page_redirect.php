@@ -40,7 +40,7 @@
     </div>
   </div>
 
-  <?php require 'includes/facebook_directives.php'; ?>
+  <?php require_once __DIR__ . '/includes/facebook_directives.php'; ?>
 </section>
 
-<?php require 'includes/footer.php'; ?>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>

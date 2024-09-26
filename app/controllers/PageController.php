@@ -8,7 +8,7 @@ class PageController
 {
   public function privacyCookie()
   {
-    View::render('page_privacy_cookie', [
+    View::render('default_pages/page_privacy_cookie', [
       'title' => 'Política de Cookies' . TITLE_SEPARATOR . SITE_NAME,
       'pageGroup' => 'page',
       'thisPage' => 'privacy_cookie',
@@ -18,7 +18,7 @@ class PageController
 
   public function privacyPolicy()
   {
-    View::render('page_privacy_policy', [
+    View::render('default_pages/page_privacy_policy', [
       'title' => 'Política de Privacidade' . TITLE_SEPARATOR . SITE_NAME,
       'pageGroup' => 'page',
       'thisPage' => 'privacy_policy',
@@ -28,7 +28,7 @@ class PageController
 
   public function termosUso()
   {
-    View::render('page_terms_conditions', [
+    View::render('default_pages/page_terms_conditions', [
       'title' => 'Termos e Condições' . TITLE_SEPARATOR . SITE_NAME,
       'pageGroup' => 'page',
       'thisPage' => 'terms_conditions',
@@ -38,7 +38,7 @@ class PageController
 
   public function page404()
   {
-    View::render('page_404', [
+    View::render('default_pages/page_404', [
       'title' => '404 - Página não encontrada' . TITLE_SEPARATOR . SITE_NAME,
       'pageGroup' => 'page',
       'thisPage' => '404',
@@ -48,7 +48,7 @@ class PageController
 
   public function page403()
   {
-    View::render('page_403', [
+    View::render('default_pages/page_403', [
       'title' => '403 - Acesso Negado' . TITLE_SEPARATOR . SITE_NAME,
       'pageGroup' => 'page',
       'thisPage' => '403',
@@ -58,7 +58,7 @@ class PageController
 
   public function jsRequired()
   {
-    View::render('page_js_required', [
+    View::render('default_pages/page_js_required', [
       'title' => 'JavaScript Necessário' . TITLE_SEPARATOR . SITE_NAME,
       'pageGroup' => 'page',
       'thisPage' => 'js_required',
