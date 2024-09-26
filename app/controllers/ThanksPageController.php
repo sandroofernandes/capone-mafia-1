@@ -15,7 +15,7 @@ class ThanksPageController
       'favicon' => SITE_ICON,
       'pageGroup' => 'thanks_page thanks_01',
       'thisPage' => 'thanks_01',
-      'linkRedirect' => 'https://t.me/+5B9hwwUTZ4s1MjUx',
+      'linkRedirect' => 'https://t.me/+XLZLg6YmIiAyNGUx',
     ]);
   }
 }
