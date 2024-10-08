@@ -17,6 +17,7 @@ class WheelPageController
       'favicon' => SITE_ICON
     ]);
   }
+
   public function bonus_ganhabet()
   {
     View::render('wheel/page_ganhabet', [
