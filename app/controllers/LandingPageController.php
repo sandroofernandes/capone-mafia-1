@@ -46,21 +46,39 @@ class LandingPageController
     // $phoneZap = "5522992216934";
     $phoneZap = "554499560659";
 
-    // https://wa.me/554499560659?text=Manda%20a%20ODD%203%20da%20Mafia%20Polonesa!
-    // $textZap = "Oi meu nome é " . $name . ", meu número de contato é " . $phoneClient  . ".\nManda pra mim a ODD da máfia Polonesa.";
     $textZap = "Manda a ODD 3 da Mafia Polonesa!";
+    // $textZap = "Oi meu nome é " . $name . ", meu número de contato é " . $phoneClient  . ".\nManda pra mim a ODD da máfia Polonesa.";
+    // https://wa.me/554499560659?text=Manda%20a%20ODD%203%20da%20Mafia%20Polonesa!
 
     $textZapEncode = urlencode(str_replace('\n', '%0A', $textZap));
 
     // $link = 'https://wa.me/' . $phoneZap . '?text=' . $textZapEncode;
-    $link = 'https://t.me/mafiacapone_bot?start=w29967314';
-    // $link = 'https://ig.me/m/caponebet_br?ref=w30181358';
+    $link = 'https://t.me/mafiacapone_bot?start=w30423039';
 
     $_SESSION['client_name'] = $name;
-    $_SESSION['client_phone'] = $phone;
+    $_SESSION['client_phone'] = $phoneClient;
     $_SESSION['url_redirect'] = $link;
 
     // return Redirect::to($link);
     return Redirect::to('/page-redirect');
+  }
+
+  public function bonus_seubet()
+  {
+    View::render('wheel/page_seubet', [
+      'title' => 'Bônus Seubet' . TITLE_SEPARATOR . SITE_NAME,
+      'pageGroup' => 'landing_page page_seubet',
+      'thisPage' => 'page_seubet',
+      'favicon' => SITE_ICON
+    ]);
+  }
+  public function bonus_ganhabet()
+  {
+    View::render('wheel/page_ganhabet', [
+      'title' => 'Bônus Ganhabet' . TITLE_SEPARATOR . SITE_NAME,
+      'pageGroup' => 'landing_page page_ganhabet',
+      'thisPage' => 'page_ganhabet',
+      'favicon' => SITE_ICON
+    ]);
   }
 }

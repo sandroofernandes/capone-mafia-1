@@ -5,6 +5,8 @@ try {
   $router->add('/page-redirect', 'GET', 'LandingPageController:pageRedirectGet');
   $router->add('/page-redirect', 'POST', 'LandingPageController:pageRedirectPost');
   $router->add('/ld-3', 'GET', 'LandingPageController:landing_page_03');
+  $router->add('/bonus-seubet', 'GET', 'LandingPageController:bonus_seubet');
+  $router->add('/bonus-ganhabet', 'GET', 'LandingPageController:bonus_ganhabet');
 
   $router->add('/acesso-privado', 'GET', 'ThanksPageController:thanks_01');
 
