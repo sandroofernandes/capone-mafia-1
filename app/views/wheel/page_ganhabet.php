@@ -36,5 +36,5 @@
 
 <script>
   // fbq("track", "Lead");
-  var offer = "https://go.aff.ganhabet.com/x3ccofu6";
+  var offerLink = "https://go.aff.ganhabet.com/x3ccofu6";
 </script>

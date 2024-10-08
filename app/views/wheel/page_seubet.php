@@ -36,5 +36,5 @@
 
 <script>
   // fbq("track", "Lead");
-  var offer = "https://seubet.com/affiliates/?btag=2001350_l330785";
+  var offerLink = "https://seubet.com/affiliates/?btag=2001350_l330785";
 </script>
