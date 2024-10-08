@@ -32,7 +32,7 @@
   setTimeout("backfrio()", 6e4), backfrio()
 </script>
 
-<script defer="defer" src="<?= SITE_URL; ?>/assets/js/script-wheel.js"></script>
+<script defer="defer" src="<?= SITE_URL; ?>/assets/js/script-wheel-new.js"></script>
 
 <script>
   // fbq("track", "Lead");
