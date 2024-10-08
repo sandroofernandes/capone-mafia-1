@@ -26,5 +26,6 @@
 <script defer="defer" src="<?= SITE_URL; ?>/assets/js/script-wheel.js"></script>
 
 <script>
-  var offer = "https://seubet.com/affiliates/?btag=2001350_l330785"
+  fbq("track", "Lead");
+  var offer = "https://seubet.com/affiliates/?btag=2001350_l330785";
 </script>

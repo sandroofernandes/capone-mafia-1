@@ -26,5 +26,6 @@
 <script defer="defer" src="<?= SITE_URL; ?>/assets/js/script-wheel.js"></script>
 
 <script>
-  var offer = "https://go.aff.ganhabet.com/x3ccofu6"
+  fbq("track", "Lead");
+  var offer = "https://go.aff.ganhabet.com/x3ccofu6";
 </script>

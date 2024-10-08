@@ -21,7 +21,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="<?= SITE_URL; ?>/assets/img/wheel/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="<?= SITE_URL; ?>/assets/img/wheel/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="<?= SITE_URL; ?>/assets/img/wheel/favicon/favicon-16x16.png">
-  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileColor" content="#0075cf">
   <meta name="msapplication-TileImage" content="<?= SITE_URL; ?>/assets/img/wheel/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#0075cf">
 
