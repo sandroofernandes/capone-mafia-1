@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="content-type" content="text/html;charset=utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Roleta Premium</title>
-  <meta name="description" content="Web site created using create-react-app">
+  <title>Roleta Premiada</title>
+  <meta name="description" content="Roleta Premiada - Receba uma aposta grátis de até R$300,00 + 100% de BÔNUS em seu primeiro depósito.">
   <link rel="apple-touch-icon" sizes="57x57" href="<?= SITE_URL; ?>/assets/img/wheel/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="<?= SITE_URL; ?>/assets/img/wheel/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="<?= SITE_URL; ?>/assets/img/wheel/favicon/apple-icon-72x72.png">
